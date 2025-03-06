@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <h1>counter</h1>
+        <p Id="result"> </p>
+        <div>
+        <button onclick="sub()">-1</button>
+        <button onclick="add()"> +1</button>
+        </div>
+        <div>
+            <button onclick="reset()"> reset</button>
+        </div>
+         
+    </div>
+     <script>
+        let count =0
+        document.getElementById('result')
+        function add(){
+            count =count+1
+            document.getElementById('result').innerHTML=count;
+    
+            
+
+        }
+        function sub(){
+            count=count-1
+            document.getElementById('result').innerHTML=count;
+
+        }
+        function reset(){
+            count=0
+            document.getElementById('result').innerHTML=count;
+        }
+     </script>   
+</body>
+</html>
